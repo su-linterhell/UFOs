@@ -33,14 +33,14 @@ function updateFilters() {
     // 4a. Save the element that was changed as a variable.
   let changedElement = d3.select(this);
     // 4b. Save the value that was changed as a variable.
-  let elementvalue = changedElement.property("value");
+  let elementValue = changedElement.property("value");
   
     // 4c. Save the id of the filter that was changed as a variable.
   let filterId = changedElement.attr("id");
   
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
-  if(elementvalue) {
+  if(elementValue) {
     filters[filterId] = elementValue;
   }
 
@@ -72,11 +72,11 @@ function filterTable() {
 }
   
   // 2. Attach an event to listen for changes to each filter
-  d3.selectAll("#datetime").on("keyup", updateFilters);
-  d3.selectAll("#city").on("keyup", updateFilters);
-  d3.selectAll("#state").on("keyup", updateFilters);
-  d3.selectAll("#country").on("keyup", updateFilters);
-  d3.selectAll("#shape").on("keyup", updateFilters);
+  d3.selectAll("#datetime").on("change", updateFilters);
+  d3.selectAll("#city").on("change", updateFilters);
+  d3.selectAll("#state").on("change", updateFilters);
+  d3.selectAll("#country").on("change", updateFilters);
+  d3.selectAll("#shape").on("change", updateFilters);
   
   // Build the table when the page loads
   buildTable(tableData);
