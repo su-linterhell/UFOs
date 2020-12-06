@@ -19,4 +19,5 @@ I think one drawback of this design is removing the filter button. The filter bu
 
 ### Date Filter - Calendar Select Option 
 ![calendar_select](static/images/calendar_select.png)
+
 Since we have limited dates to select from, giving users a drop down menu like this will make it very clear what dates we have data for. A calendar with only available dates selectable (and non-existent dates greyed out). Currently, its not apparent to users that we only have Jan 2020 data to select from. Users could waste time searching for other dates before realizing we have limited data available to select from. 
