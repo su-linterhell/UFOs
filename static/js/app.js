@@ -72,11 +72,11 @@ function filterTable() {
 }
   
   // 2. Attach an event to listen for changes to each filter
-  d3.selectAll("#datetime").on("change", updateFilters);
-  d3.selectAll("#city").on("change", updateFilters);
-  d3.selectAll("#state").on("change", updateFilters);
-  d3.selectAll("#country").on("change", updateFilters);
-  d3.selectAll("#shape").on("change", updateFilters);
+  d3.selectAll("#datetime").on("keyup", updateFilters);
+  d3.selectAll("#city").on("keyup", updateFilters);
+  d3.selectAll("#state").on("keyup", updateFilters);
+  d3.selectAll("#country").on("keyup", updateFilters);
+  d3.selectAll("#shape").on("keyup", updateFilters);
   
   // Build the table when the page loads
   buildTable(tableData);
