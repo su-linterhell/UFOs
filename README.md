@@ -1,5 +1,5 @@
 # UFOs
-
+Using Javascript & Bootstrap to create a UFO webpage based off UFO sightnigs stored in a JS file. 
 ## Overview of Project: 
 The purpose of this project is to take UFO data stored in a JS file and use that to create an interactive webpage. This webpage allows the user to search for UFO sightings throughout the US based on different criteria. 
 
